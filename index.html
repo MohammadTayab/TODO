@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        button:hover {
+            background-color: #07779d;
+        }
+
+        a {
+            margin-top: 10px;
+            text-decoration: none;
+            color: #4caf50;
+        }
+        a:hover { 
+            color: #008CBA;
+        }
+        .ha{
+            border-radius: 8px;
+        }
+        .ha:hover{
+            background-color: #f2ecec;
+        }
+    </style>
+    <title>Sign Up</title>
+</head>
+<body>
+    <h1>SIGN UP</h1>
+
+    <input class="ha" type="email" placeholder="Enter Email" id="semail"size="30">
+    <br>
+
+    <input class="ha" type="password" placeholder="Enter password" id="spass" size="30">
+    <br><br>
+
+    <button id="subtn">SIGN UP</button><br>
+   <p>Already have an account? <a href="signin.html">Login</a></p>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #getinp {
+            padding: 8px;
+            margin-right: 8px;
+        }
+
+        #red {
+            background-color: #e44d26;
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+        }
+
+        #red:hover {
+            background-color: #c73407;
+        }
+
+        .delete-button {
+            padding: 10px;
+            background-color: #e44d26;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border: none;
+            border-radius: 12px;
+            /* margin-left: 8px; */
+        }
+
+        .delete-button:hover {
+            background-color: #c73407;
+        }
+
+        button {
+            padding: 10px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .green {
+            background-color: #4caf50;
+            border-radius: 12px;
+        }
+
+        .green:hover {
+            background-color: #45a049;
+        }
+
+        #logoutBtn {
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+        }
+
+        #logoutBtn:hover {
+            background-color: #cc4731;
+        }
+
+        #getul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #getul li {
+            background-color: #fff;
+            margin-bottom: 8px;
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #getinp{
+            border-radius: 8px;
+        }
+        #getinp:hover{
+            background-color: #f2ecec;
+        }
+
+        #getul li button {
+            border: none;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+    </style>
+    <title>Welcome</title>
+</head>
+
+<body>
+    <h1>Welcome User</h1>
+
+
+    <a> <input type="text" id="getinp" placeholder="Enter Todo">
+        <button class="green" onclick="addtodo()">Add</button>
+        <button onclick="delAllTodos()" id="red">Delete All</button><br></a>
+    <ul id="getul"></ul><br><br>
+    <button id="logoutBtn">Logout</button>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
